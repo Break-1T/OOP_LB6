@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_LB6.Dialog_boxes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,27 @@ namespace OOP_LB6
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            CreateWindow createWindow = new CreateWindow();
+            createWindow.Show();
+        }
+
+        private void Open_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowText_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

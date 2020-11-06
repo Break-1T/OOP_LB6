@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_LB6"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
-    
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <UniformGrid Grid.Row="0" Columns="4">
+            <Button x:Name="Create" Content="Create" Cursor="Hand" Click="Create_Click"/>
+            <Button x:Name="Open" Content="Open" Cursor="Hand" Click="Open_Click"/>
+            <Button x:Name="Edit" Content="Edit" Cursor="Hand" Click="Edit_Click"/>
+            <Button x:Name="ShowText" Content="Show text" Cursor="Hand" Click="ShowText_Click"/>
+        </UniformGrid>
+        <TextBlock x:Name="DisplayText" Grid.Row="1" TextWrapping="Wrap"/>
     </Grid>
 </Window>
