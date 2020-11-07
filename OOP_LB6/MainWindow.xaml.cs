@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using OOP_LB6.Classes;
 
 namespace OOP_LB6
 {
@@ -48,8 +49,8 @@ namespace OOP_LB6
 
         private void ShowText_Click(object sender, RoutedEventArgs e)
         {
-            string result = File.ReadAllText(Path);
-            DisplayText.Text += result;
+            TxtFile txtFile = new TxtFile(Path);
+            DisplayText.Text = txtFile.ShowText();  
         }
     }
 }
