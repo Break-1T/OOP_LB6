@@ -12,12 +12,14 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="Введите путь, по которому нужно открыть документ:"
                    HorizontalAlignment="Center"
                    TextWrapping="Wrap"/>
-        <TextBlock Grid.Row="1" Text="Пример указания пути: C:\User\Documents\test.txt" Foreground="Red"/>
-        <TextBox Grid.Row="2" x:Name="DocPath"/>
-        <Button Grid.Row="3" x:Name="Open" Content="Открыть" Click="Open_Click" Cursor="Hand"/>
+        <TextBlock Grid.Row="1" Text="Пример указания пути: C:\User\Documents\test.txt" Foreground="Red" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="2" Text="Поддерживаемые типы: .dat .txt" Foreground="Red" TextWrapping="Wrap"/>
+        <TextBox Grid.Row="3" x:Name="DocPath"/>
+        <Button Grid.Row="4" x:Name="Open" Content="Открыть" Click="Open_Click" Cursor="Hand"/>
     </Grid>
 </Window>

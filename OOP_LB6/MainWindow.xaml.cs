@@ -48,8 +48,16 @@ namespace OOP_LB6
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            TxtFile txtFile = new TxtFile(this);
-            txtFile.Save();
+            if (Path.Contains(".txt"))
+            {
+                TxtFile txtFile = new TxtFile(this);
+                txtFile.Save();
+            }
+            else if(Path.Contains(".dat"))
+            {
+                DatFile datFile = new DatFile(this);
+                datFile.Save();
+            }
         }
         private void ShowText()
         {
@@ -58,9 +66,14 @@ namespace OOP_LB6
                 TxtFile txtFile = new TxtFile(this);
                 DisplayText.Text = txtFile.ShowText();
             }
-            else if (Path.Contains(".doc"))
+            else if (Path.Contains(".dat"))
             {
-
+                DatFile datFile = new DatFile(this);
+                DisplayText.Text = datFile.ShowText();
+            }
+            else
+            {
+                MessageBox.Show("Невозможно открыть файл, с таким расширением");
             }
         }
     }

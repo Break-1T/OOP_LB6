@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
-using System.Windows;
+using System.IO;
 
 namespace OOP_LB6.Classes
 {
-    class TxtFile : AbstractHandler
+    class DatFile : AbstractHandler
     {
-        public TxtFile(MainWindow main) : base(main) { }
+        public DatFile(MainWindow main) : base(main) { }
 
         public override void Save()
         {

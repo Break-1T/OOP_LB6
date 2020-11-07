@@ -26,7 +26,7 @@
         </UniformGrid>
         <StackPanel Grid.Row="4">
             <TextBlock Text="Тип документа:" Margin="0 0 0 5"/>
-            <RadioButton GroupName="DocType" Content=".doc" Margin="0 0 0 1" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="DocType" Content=".dat" Margin="0 0 0 1" Checked="RadioButton_Checked"/>
             <RadioButton GroupName="DocType" Content=".txt" Margin="0 0 0 1" Checked="RadioButton_Checked"/>
         </StackPanel>
         <Button Grid.Row="5" x:Name="Create" Content="Создать" Click="Create_Click"  Cursor="Hand"/>
