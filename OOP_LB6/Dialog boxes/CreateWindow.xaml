@@ -5,27 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_LB6.Dialog_boxes"
         mc:Ignorable="d"
-        Title="CreateWindow" SizeToContent="WidthAndHeight" Background="AliceBlue" WindowStartupLocation="CenterScreen">
+        Title="CreateWindow" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" Background="AliceBlue" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
             <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Text="Введите путь, по которому нужно создать документ:" HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" x:Name="DocPath"/>
-        <UniformGrid Grid.Row="2" Columns="2">
+        <TextBlock Grid.Row="0" Text="Введите путь, по которому нужно создать документ:"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="1" Text="Пример указания пути: C:\User\Documents\" Foreground="Red"/>
+        <TextBox Grid.Row="2" x:Name="DocPath"/>
+        <UniformGrid Grid.Row="3" Columns="2">
             <TextBlock Text="Имя документа:"/>
             <TextBox x:Name="DocName"/>
         </UniformGrid>
-        <StackPanel Grid.Row="3">
+        <StackPanel Grid.Row="4">
             <TextBlock Text="Тип документа:" Margin="0 0 0 5"/>
-            <RadioButton GroupName="DocType" Content=".docx" Margin="0 0 0 1"/>
-            <RadioButton GroupName="DocType" Content=".txt" Margin="0 0 0 1"/>
+            <RadioButton GroupName="DocType" Content=".docx" Margin="0 0 0 1" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="DocType" Content=".txt" Margin="0 0 0 1" Checked="RadioButton_Checked"/>
         </StackPanel>
-        <Button Grid.Row="4" Content="Создать" Click="Button_Click" Cursor="Hand"/>
+        <Button Grid.Row="5" x:Name="Create" Content="Создать" Click="Create_Click"  Cursor="Hand"/>
     </Grid>
 </Window>

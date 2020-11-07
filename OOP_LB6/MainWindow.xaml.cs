@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace OOP_LB6
 {
@@ -26,6 +27,8 @@ namespace OOP_LB6
             InitializeComponent();
         }
 
+        public string Path { get; set; }
+
         private void Create_Click(object sender, RoutedEventArgs e)
         {
             CreateWindow createWindow = new CreateWindow();
@@ -34,7 +37,8 @@ namespace OOP_LB6
 
         private void Open_Click(object sender, RoutedEventArgs e)
         {
-
+            OpenWindow openWindow = new OpenWindow(this);
+            openWindow.Show();
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
@@ -44,7 +48,8 @@ namespace OOP_LB6
 
         private void ShowText_Click(object sender, RoutedEventArgs e)
         {
-
+            string result = File.ReadAllText(Path);
+            DisplayText.Text += result;
         }
     }
 }
