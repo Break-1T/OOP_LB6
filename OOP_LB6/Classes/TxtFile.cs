@@ -8,15 +8,18 @@ namespace OOP_LB6.Classes
 {
     class TxtFile : AbstractHandler
     {
-        public TxtFile(string Path) : base(Path) { }
-        public override void Edit()
-        {
-            throw new NotImplementedException();
-        }
+        public TxtFile(MainWindow main) : base(main) { }
 
+        public override void Save()
+        {
+            using (StreamWriter streamWriter = new StreamWriter(main.Path))
+            {
+                streamWriter.WriteLine(main.DisplayText.Text);
+            }
+        }
         public override string ShowText()
         {
-            using (StreamReader streamReader = new StreamReader(Path, Encoding.GetEncoding("Windows-1252")))
+            using (StreamReader streamReader = new StreamReader(main.Path))
             {
                 return streamReader.ReadToEnd();
             }

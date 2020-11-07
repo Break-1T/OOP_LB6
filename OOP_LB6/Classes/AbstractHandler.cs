@@ -6,12 +6,14 @@ namespace OOP_LB6.Classes
 {
     abstract class AbstractHandler
     {
-        public AbstractHandler(string Path)
+        public AbstractHandler(MainWindow main)
         {
-            this.Path = Path;
+            this.main = main;
         }
-        public string Path { get; set; }
-        abstract public void Edit();
+
+        public MainWindow main { get; set; }
+
+        abstract public void Save();
         abstract public string ShowText();
     }
 }

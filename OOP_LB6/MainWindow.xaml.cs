@@ -33,24 +33,35 @@ namespace OOP_LB6
         private void Create_Click(object sender, RoutedEventArgs e)
         {
             CreateWindow createWindow = new CreateWindow();
+            createWindow.Owner = this;
             createWindow.Show();
         }
-
         private void Open_Click(object sender, RoutedEventArgs e)
         {
             OpenWindow openWindow = new OpenWindow(this);
+            openWindow.Owner = this;
             openWindow.Show();
         }
-
-        private void Edit_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void ShowText_Click(object sender, RoutedEventArgs e)
         {
-            TxtFile txtFile = new TxtFile(Path);
-            DisplayText.Text = txtFile.ShowText();  
+            ShowText();
+        }
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            TxtFile txtFile = new TxtFile(this);
+            txtFile.Save();
+        }
+        private void ShowText()
+        {
+            if (Path.Contains(".txt"))
+            {
+                TxtFile txtFile = new TxtFile(this);
+                DisplayText.Text = txtFile.ShowText();
+            }
+            else if (Path.Contains(".doc"))
+            {
+
+            }
         }
     }
 }
