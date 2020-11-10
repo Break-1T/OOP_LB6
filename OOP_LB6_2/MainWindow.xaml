@@ -7,12 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Menu  Height="auto"  VerticalAlignment="Top">
-            <MenuItem Header="File">
-                <MenuItem Header="Open" Click="MenuItem_Open_OnClick"/>
-                <MenuItem Header="Close" Click="MenuItem_Close_OnClick"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Height="auto">
+            <MenuItem Header="File" Cursor="Hand">
+                <MenuItem Header="Open" Cursor="Hand" Click="MenuItem_Open_OnClick"/>
+                <MenuItem Header="Close" Cursor="Hand" Click="MenuItem_Close_OnClick"/>
             </MenuItem>
         </Menu>
-        
+        <UniformGrid Grid.Row="2" Columns="3">
+            <Button Content="Play" Cursor="Hand"/>
+            <Button Content="Pause" Cursor="Hand"/>
+            <Button Content="Record" Cursor="Hand"/>
+        </UniformGrid>
     </Grid>
 </Window>

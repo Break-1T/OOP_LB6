@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_LB6_2.DialogBoxes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,12 +28,13 @@ namespace OOP_LB6_2
 
         private void MenuItem_Open_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            FileSelectionWindow fileSelection = new FileSelectionWindow() { Owner = this };
+            fileSelection.Show();
         }
 
         private void MenuItem_Close_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Close();
         }
     }
 }
