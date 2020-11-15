@@ -42,7 +42,23 @@ namespace OOP_LB6_2
 
         private void Play_Click(object sender, RoutedEventArgs e)
         {
-            testtext.Text = Player.Url + Player.Name + Player.Type;
+            switch (Player.Type)
+            {
+                case ".mp3":
+                    {
+                        MP3 mp3 = new MP3(this);
+                        mp3.Play();
+                    }
+                    break;
+                case ".wav":
+                    {
+                        WAV wav = new WAV(this);
+                        wav.Play();
+                    }
+                    break;
+                case ".mkv":
+                    break;
+            }
         }
 
         private void Pause_Click(object sender, RoutedEventArgs e)
@@ -51,6 +67,11 @@ namespace OOP_LB6_2
         }
 
         private void Record_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Stop_Click(object sender, RoutedEventArgs e)
         {
 
         }

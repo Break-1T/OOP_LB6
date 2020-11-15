@@ -19,9 +19,10 @@
             </MenuItem>
         </Menu>
         <TextBlock x:Name="testtext" Grid.Row="1"/>
-        <UniformGrid Grid.Row="2" Columns="3">
+        <UniformGrid Grid.Row="2" Columns="4">
             <Button x:Name="Play" Content="Play" Cursor="Hand" Click="Play_Click"/>
             <Button x:Name="Pause" Content="Pause" Cursor="Hand" Click="Pause_Click"/>
+            <Button x:Name="Stop" Content="Stop" Cursor="Hand" Click="Stop_Click"/>
             <Button x:Name="Record" Content="Record" Cursor="Hand" Click="Record_Click"/>
         </UniformGrid>
     </Grid>
