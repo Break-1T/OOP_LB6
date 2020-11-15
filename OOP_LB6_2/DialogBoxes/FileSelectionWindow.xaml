@@ -12,8 +12,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="Файлы берутся из папки media" HorizontalAlignment="Center"/>
-        <StackPanel Grid.Row="1">   
-            
+        <StackPanel Grid.Row="1" Cursor="Hand" CanVerticallyScroll="True">
+            <ListBox x:Name="MediaContent" MouseDoubleClick="ListBoxItem_MouseDoubleClick"/>
         </StackPanel>
     </Grid>
 </Window>

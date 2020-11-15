@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_LB6_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Cursor="Hand">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -18,10 +18,11 @@
                 <MenuItem Header="Close" Cursor="Hand" Click="MenuItem_Close_OnClick"/>
             </MenuItem>
         </Menu>
+        <TextBlock x:Name="testtext" Grid.Row="1"/>
         <UniformGrid Grid.Row="2" Columns="3">
-            <Button Content="Play" Cursor="Hand"/>
-            <Button Content="Pause" Cursor="Hand"/>
-            <Button Content="Record" Cursor="Hand"/>
+            <Button x:Name="Play" Content="Play" Cursor="Hand" Click="Play_Click"/>
+            <Button x:Name="Pause" Content="Pause" Cursor="Hand" Click="Pause_Click"/>
+            <Button x:Name="Record" Content="Record" Cursor="Hand" Click="Record_Click"/>
         </UniformGrid>
     </Grid>
 </Window>
