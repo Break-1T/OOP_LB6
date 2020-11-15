@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\C#\LB6\OOP_LB6_2\obj\Debug\netcoreapp3.1\
+D:\C#\OOP_LB6_2\obj\Debug\netcoreapp3.1\
 OOP_LB6_2
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\C#\LB6\OOP_LB6_2\App.xaml
+D:\C#\OOP_LB6_2\App.xaml
 2-1893435529
 
-111671319139
+111346872377
 1921654412462
 DialogBoxes\FileSelectionWindow.xaml;MainWindow.xaml;
 
-True
+False
 

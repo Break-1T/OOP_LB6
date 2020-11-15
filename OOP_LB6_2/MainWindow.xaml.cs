@@ -31,7 +31,7 @@ namespace OOP_LB6_2
 
         public MP3 mp3 { get; set; }
         public WAV wav { get; set; }
-        public MKV mkv { get; set; }
+        public MP4 mp4 { get; set; }
 
         private void MenuItem_Open_OnClick(object sender, RoutedEventArgs e)
         {
@@ -54,8 +54,8 @@ namespace OOP_LB6_2
                 case ".wav":
                     wav.Play();
                     break;
-                case ".mkv":
-                    mkv.Play();
+                case ".mp4":
+                    mp4.Play();
                     break;
             }
         }
@@ -70,8 +70,8 @@ namespace OOP_LB6_2
                 case ".wav":
                     wav.Pause();
                     break;
-                case ".mkv":
-                    mkv.Pause();
+                case ".mp4":
+                    mp4.Pause();
                     break;
             }
         }
@@ -91,8 +91,8 @@ namespace OOP_LB6_2
                 case ".wav":
                     wav.Stop();
                     break;
-                case ".mkv":
-                    mkv.Stop();
+                case ".mp4":
+                    mp4.Stop();
                     break;
             }
         }

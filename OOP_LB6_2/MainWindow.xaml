@@ -20,6 +20,7 @@
             </MenuItem>
         </Menu>
         <TextBlock Grid.Row="1" x:Name="SongName" HorizontalAlignment="Center"/>
+        <MediaElement Grid.Row="2" x:Name="VideoElement"/>
         <UniformGrid Grid.Row="3" Columns="4">
             <Button x:Name="Play" Content="Play" Cursor="Hand" Click="Play_Click"/>
             <Button x:Name="Pause" Content="Pause" Cursor="Hand" Click="Pause_Click"/>

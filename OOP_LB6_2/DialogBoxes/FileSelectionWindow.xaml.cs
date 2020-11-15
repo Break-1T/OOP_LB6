@@ -88,8 +88,8 @@ namespace OOP_LB6_2.DialogBoxes
                 case ".wav":
                     main.wav = new WAV(main);
                     break;
-                case ".mkv":
-                    main.mkv = new MKV(main);
+                case ".mp4":
+                    main.mp4 = new MP4(main);
                     break;
             }
         }
@@ -99,9 +99,9 @@ namespace OOP_LB6_2.DialogBoxes
             {
                 main.mp3.Stop();
             }
-            if (main.mkv != null)
+            if (main.mp4 != null)
             {
-                main.mkv.Stop();
+                main.mp4.Stop();
             }
             if (main.wav != null)
             {

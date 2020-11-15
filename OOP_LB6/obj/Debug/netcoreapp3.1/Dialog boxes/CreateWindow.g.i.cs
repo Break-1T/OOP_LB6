@@ -77,7 +77,7 @@ namespace OOP_LB6.Dialog_boxes {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/OOP_LB6_1;component/dialog%20boxes/createwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/OOP_LB6_1;V1.0.0.0;component/dialog%20boxes/createwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialog boxes\CreateWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

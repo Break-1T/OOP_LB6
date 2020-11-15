@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\LB6\\OOP_LB6_2\\OOP_LB6_2.csproj": {}
+    "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj": {}
   },
   "projects": {
-    "D:\\C#\\LB6\\OOP_LB6_2\\OOP_LB6_2.csproj": {
+    "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\LB6\\OOP_LB6_2\\OOP_LB6_2.csproj",
+        "projectUniqueName": "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj",
         "projectName": "OOP_LB6_2",
-        "projectPath": "D:\\C#\\LB6\\OOP_LB6_2\\OOP_LB6_2.csproj",
-        "packagesPath": "C:\\Users\\taras\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\LB6\\OOP_LB6_2\\obj\\",
+        "projectPath": "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj",
+        "packagesPath": "C:\\Users\\ТарасКрупко\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\OOP_LB6_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\taras\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ТарасКрупко\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

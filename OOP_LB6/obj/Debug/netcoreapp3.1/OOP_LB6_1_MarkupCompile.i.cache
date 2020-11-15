@@ -1,20 +1,20 @@
 ﻿OOP_LB6_1
-
+1.0.0.0
 
 winexe
 C#
 .cs
-D:\C#\LB6\OOP_LB6\obj\Debug\netcoreapp3.1\
+D:\C#\OOP_LB6\obj\Debug\netcoreapp3.1\
 OOP_LB6_1
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\C#\LB6\OOP_LB6\App.xaml
+D:\C#\OOP_LB6\App.xaml
 3405085459
 
-9-172588949
+101178754685
 1921654412462
 Dialog boxes\CreateWindow.xaml;Dialog boxes\OpenWindow.xaml;MainWindow.xaml;
 
-False
+True
 
