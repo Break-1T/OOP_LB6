@@ -63,14 +63,17 @@ namespace OOP_LB6_2.DialogBoxes
         private void ListBoxItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             string type = "";
+            string name = "";
             foreach (PlayerItem i in FileList) 
             {
                 if ((string)MediaContent.SelectedItem == (i.Name + i.Type))
                 {
                     main.Player = i;
                     type = i.Type;
+                    name = i.Name;
                 }
             }
+            main.SongName.Text = name;
             CloseFiles();
             CreateFileByType(type);
             Close();
