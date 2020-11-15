@@ -18,7 +18,6 @@
                 <MenuItem Header="Close" Cursor="Hand" Click="MenuItem_Close_OnClick"/>
             </MenuItem>
         </Menu>
-        <TextBlock x:Name="testtext" Grid.Row="1"/>
         <UniformGrid Grid.Row="2" Columns="4">
             <Button x:Name="Play" Content="Play" Cursor="Hand" Click="Play_Click"/>
             <Button x:Name="Pause" Content="Pause" Cursor="Hand" Click="Pause_Click"/>

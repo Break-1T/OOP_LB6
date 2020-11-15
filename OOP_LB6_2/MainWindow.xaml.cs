@@ -29,6 +29,10 @@ namespace OOP_LB6_2
 
         public PlayerItem Player { get; set; }
 
+        public MP3 mp3 { get; set; }
+        public WAV wav { get; set; }
+        public MKV mkv { get; set; }
+
         private void MenuItem_Open_OnClick(object sender, RoutedEventArgs e)
         {
             FileSelectionWindow fileSelection = new FileSelectionWindow(this) { Owner = this };
@@ -45,25 +49,31 @@ namespace OOP_LB6_2
             switch (Player.Type)
             {
                 case ".mp3":
-                    {
-                        MP3 mp3 = new MP3(this);
-                        mp3.Play();
-                    }
+                    mp3.Play();
                     break;
                 case ".wav":
-                    {
-                        WAV wav = new WAV(this);
-                        wav.Play();
-                    }
+                    wav.Play();
                     break;
                 case ".mkv":
+                    mkv.Play();
                     break;
             }
         }
 
         private void Pause_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (Player.Type)
+            {
+                case ".mp3":
+                    mp3.Pause();
+                    break;
+                case ".wav":
+                    wav.Pause();
+                    break;
+                case ".mkv":
+                    mkv.Pause();
+                    break;
+            }
         }
 
         private void Record_Click(object sender, RoutedEventArgs e)
@@ -73,7 +83,18 @@ namespace OOP_LB6_2
 
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (Player.Type)
+            {
+                case ".mp3":
+                    mp3.Stop();
+                    break;
+                case ".wav":
+                    wav.Stop();
+                    break;
+                case ".mkv":
+                    mkv.Stop();
+                    break;
+            }
         }
     }
 }

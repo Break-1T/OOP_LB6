@@ -7,7 +7,7 @@ using System.Windows.Media;
 
 namespace OOP_LB6_2.Classes
 {
-    class MP3 : IRecordable, IPlayable
+    public class MP3 : IRecordable, IPlayable
     {
         public MP3(MainWindow main)
         {

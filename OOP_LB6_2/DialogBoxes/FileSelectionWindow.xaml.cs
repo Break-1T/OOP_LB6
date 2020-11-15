@@ -62,13 +62,47 @@ namespace OOP_LB6_2.DialogBoxes
 
         private void ListBoxItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            string type = "";
             foreach (PlayerItem i in FileList) 
             {
                 if ((string)MediaContent.SelectedItem == (i.Name + i.Type))
                 {
                     main.Player = i;
-                    Close();
+                    type = i.Type;
                 }
+            }
+            CloseFiles();
+            CreateFileByType(type);
+            Close();
+        }
+        private void CreateFileByType(string type)
+        {
+            switch (type)
+            {
+                case ".mp3":
+                    main.mp3 = new MP3(main);
+                    break;
+                case ".wav":
+                    main.wav = new WAV(main);
+                    break;
+                case ".mkv":
+                    main.mkv = new MKV(main);
+                    break;
+            }
+        }
+        private void CloseFiles()
+        {
+            if (main.mp3 != null)
+            {
+                main.mp3.Stop();
+            }
+            if (main.mkv != null)
+            {
+                main.mkv.Stop();
+            }
+            if (main.wav != null)
+            {
+                main.wav.Stop();
             }
         }
     }

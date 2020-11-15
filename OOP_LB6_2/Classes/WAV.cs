@@ -6,7 +6,7 @@ using System.Windows.Media;
 
 namespace OOP_LB6_2.Classes
 {
-    class WAV : IRecordable, IPlayable
+    public class WAV : IRecordable, IPlayable
     {
         public WAV(MainWindow main)
         {
