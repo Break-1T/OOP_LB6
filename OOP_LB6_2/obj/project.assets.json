@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj",
+      "projectUniqueName": "D:\\Project\\OOP_LB6_2\\OOP_LB6_2.csproj",
       "projectName": "OOP_LB6_2",
-      "projectPath": "D:\\C#\\OOP_LB6_2\\OOP_LB6_2.csproj",
+      "projectPath": "D:\\Project\\OOP_LB6_2\\OOP_LB6_2.csproj",
       "packagesPath": "C:\\Users\\ТарасКрупко\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\OOP_LB6_2\\obj\\",
+      "outputPath": "D:\\Project\\OOP_LB6_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ТарасКрупко\\AppData\\Roaming\\NuGet\\NuGet.Config",

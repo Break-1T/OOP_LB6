@@ -9,23 +9,22 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="15"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" Height="auto">
+        <Menu Grid.Row="0" Height="auto" Background="Silver">
             <MenuItem Header="File" Cursor="Hand">
                 <MenuItem Header="Open" Cursor="Hand" Click="MenuItem_Open_OnClick"/>
                 <MenuItem Header="Close" Cursor="Hand" Click="MenuItem_Close_OnClick"/>
             </MenuItem>
         </Menu>
-        <TextBlock Grid.Row="1" x:Name="SongName" HorizontalAlignment="Center"/>
-        <MediaElement Grid.Row="2" x:Name="VideoElement"/>
-        <UniformGrid Grid.Row="3" Columns="4">
-            <Button x:Name="Play" Content="Play" Cursor="Hand" Click="Play_Click"/>
-            <Button x:Name="Pause" Content="Pause" Cursor="Hand" Click="Pause_Click"/>
-            <Button x:Name="Stop" Content="Stop" Cursor="Hand" Click="Stop_Click"/>
-            <Button x:Name="Record" Content="Record" Cursor="Hand" Click="Record_Click"/>
+        <TextBlock Grid.Row="0" x:Name="SongName" HorizontalAlignment="Center"/>
+        <MediaElement Grid.Row="1" x:Name="VideoElement" Stretch="Fill"/>
+        <UniformGrid Grid.Row="2" Columns="4">
+            <Button x:Name="Play" Background="Moccasin" FontFamily="Times New Roman" FontSize="20" Content="Play" Cursor="Hand" Click="Play_Click"/>
+            <Button x:Name="Pause" Background="Moccasin" FontFamily="Times New Roman" FontSize="20" Content="Pause" Cursor="Hand" Click="Pause_Click"/>
+            <Button x:Name="Stop" Background="Moccasin" FontFamily="Times New Roman" FontSize="20" Content="Stop" Cursor="Hand" Click="Stop_Click"/>
+            <Button x:Name="Record" Background="Moccasin" FontFamily="Times New Roman" FontSize="20" Content="Record" Cursor="Hand" Click="Record_Click"/>
         </UniformGrid>
     </Grid>
 </Window>

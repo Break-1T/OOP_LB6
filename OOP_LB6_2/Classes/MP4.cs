@@ -14,7 +14,8 @@ namespace OOP_LB6_2.Classes
             this.main = main;
             videoElement = main.VideoElement;
             videoElement.Source = new Uri(main.Player.Url, UriKind.RelativeOrAbsolute);
-            
+            videoElement.LoadedBehavior = MediaState.Manual;
+            videoElement.Volume = 1;
         }
 
         MainWindow main;
